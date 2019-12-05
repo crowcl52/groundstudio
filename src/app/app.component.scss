@@ -1,0 +1,19 @@
+ul{
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.content{
+    height: calc(100% - 80px);
+    overflow: hidden;
+}
+
+nav{
+    height: 100px !important;
+    background: white;
+}
+
+a{
+    color: gray;
+}
