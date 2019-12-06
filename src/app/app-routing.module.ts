@@ -15,17 +15,11 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  {
-    path: 'projects', component: ProjectsComponent, children: [
-      { path: 'project-detail/:id', component: ProjectsDetailComponent },
-    ]
-  },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'project-detail/:id', component: ProjectsDetailComponent },
   { path: 'studio', component: StudioComponent },
-  {
-    path: 'team', component: TeamComponent, children: [
-      { path: 'team-detail/:id', component: TeamDetailComponent },
-    ]
-  },
+  { path: 'team', component: TeamComponent },
+  { path: 'team-detail/:id', component: TeamDetailComponent },
   { path: 'collaborators', component: CollaboratorsComponent },
   { path: 'books', component: BooksComponent },
   { path: 'articles', component: ArticlesComponent },

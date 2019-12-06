@@ -1,1 +1,34 @@
-<p>projects-detail works!</p>
+<nav class="main-nav row">
+    <a class="title text-secondary col-4 offset-6 cursor" (click)="showInfo = !showInfo">
+        <b> BIG ROCK </b> |
+        <span class="small text-muted " >
+            ST. HELENA, CALIFORMIA
+        </span> 
+    </a>
+    <div class="change-project col-auto">
+        <a class="text-secondary cursor mr-3"> ‹ </a>
+        <span class="text-secondary small"> Projects </span>
+        <a class="text-secondary cursor ml-3"> › </a>
+    </div>
+</nav>
+<section class="full">
+    <div class="text" *ngIf="showInfo">
+        A series of stone, steel and glass pavilions by architect Daniel Piechota nestle into a rugged, rocky Napa
+        Valley hillside. The placement of the buildings creates a range of landscape spaces including intimate
+        courtyards, living roofs, and expansive terraces that overlook distant valleys and woodlands.
+
+        The clients requested a ‘new’ Napa Valley garden that was a direct response to the site.
+
+        The designed landscape is anchored by a series of elongated granite slabs and carefully arranged Pistache trees.
+        The broad design ’strokes’ link the more civilized landscape to the existing wild woodland and the valley views
+        beyond.
+
+        Large sweeps of indigenous grasses, groundcovers, and shrubs thrive in the extreme seasonal temperatures typical
+        of the region. The stone was sculpted by local artisan Edwin Hamilton who masterfully anchored the ground plane
+        with boulders and the distinct pathways we designed.
+
+        A strong vision for the overall landscape threads the various areas together into one artful fabric that is
+        visually consistent with the natural environment.
+    </div>
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+</section>

@@ -1,1 +1,8 @@
-<p>projects works!</p>
+<section class="project-section full">
+    <a *ngFor="let item of projects" [routerLink]="['/project-detail/2']">
+        <div class="project-preview"
+            [ngStyle]="{'background-image': 'url(' + 'http://groundstudio.com/wp-content/uploads/2018/02/xproject_gallery_thumb1.jpg.pagespeed.ic.OOcwCSxDIF.webp' + ')'}">
+            <div class="label">MAACAMA RIDGE</div>
+        </div>
+    </a>
+</section>
