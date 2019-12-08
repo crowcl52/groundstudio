@@ -22,3 +22,13 @@
 a:hover{
     text-decoration: none!important;
 }
+
+.initial-p{
+    padding: 3rem 3rem 0 3rem;
+}
+
+@media (max-width: 991px) {
+    .initial-p{
+        padding: 0;
+    }
+}

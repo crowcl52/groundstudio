@@ -8,4 +8,5 @@ import 'hammerjs';
 })
 export class AppComponent {
   title = 'ground';
+  showMenu = false;
 }

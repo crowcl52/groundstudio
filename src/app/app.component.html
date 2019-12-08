@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5 pl-5 pr-5 pb-0 full">
+<div class="container-fluid initial-p full">
   <div class="full">
     <div class="content">
       <router-outlet></router-outlet>
@@ -7,8 +7,9 @@
       <a class="navbar-brand" [routerLink]="['']">
         <img src="./assets/logo.png" height="30" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button (click)="showMenu = !showMenu" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -35,4 +36,15 @@
     </nav>
   </div>
 
+</div>
+
+<div class="mobile-menu" *ngIf="showMenu" >
+  <div class="menu-main-container">
+      <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</a>
+      <a class="nav-link" [routerLink]="['/studio']" routerLinkActive="router-link-active">Studio</a>
+      <a class="nav-link" [routerLink]="['/books']" routerLinkActive="router-link-active">Publications</a>
+      <a class="nav-link" [routerLink]="['/video']" routerLinkActive="router-link-active">Video</a>
+      <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a>
+  </div>
+  <div class="arrow"></div>
 </div>
